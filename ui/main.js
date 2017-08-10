@@ -9,11 +9,11 @@ element.innerHTML='new vlaue by the local code console.';
 //To move the image
 
 var img=document.getElementById('madi');
-var marginRight=0;
+var marginLeft=0;
 function moveRight()
 {
-    marginRight=marginRight+10; 
-    img.style.marginRight=marginRight + 'px';
+    marginLeft=marginLeft+10; 
+    img.style.marginLeft=marginLeft + 'px';
 }
 img.onclick = function()
 {
