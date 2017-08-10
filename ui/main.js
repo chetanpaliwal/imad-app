@@ -8,7 +8,7 @@ element.innerHTML='new vlaue by the local code console.';
 
 //To move the image
 
-var img=gerdocumentById('img');
+var img=gerdocumentById('madi');
 
 img.onclick = function()
 {
