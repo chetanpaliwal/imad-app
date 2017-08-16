@@ -81,21 +81,12 @@ app.get('/submit-name',function(req,res){   //URL: /submit-name?=name = xxxxx
 });
 
 app.get('/article-one',function(req,res){
-  res.send(createTemplate(articleOne)); 
-});
-
-app.get('/article-two',function(req,res){
-   res.sendFile(path.join(__dirname, 'ui', 'article-two.html')); 
-});
-
-app.get('/article-three',function(req,res){
-   res.sendFile(path.join(__dirname, 'ui', 'article-three.html')); 
+  res.send(createTemplate(articles[articleOne])); 
 });
 
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
-
 
 app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
