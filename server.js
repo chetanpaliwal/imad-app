@@ -18,7 +18,7 @@ var articleOne={
             </p>
             <p>
                 This is the first content of my first article.This is the first content of my first article.This is the first content of my first article.This is the first content of my first article.This is the first content of my first article.This is the first content of my first article.This is the first content of my first article.This is the first content of my first article.This is the first content of my first article.This is the first content of my first article.This is the first content of my first article.
-            </p>`
+            </p>
 };
 
 function createTemplate(data){
