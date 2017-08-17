@@ -78,11 +78,8 @@ app.get('/submit-name',function(req,res){   //URL: /submit-name?=name = xxxxx
   res.send(JSON.stringify(names));
 });
 
-app.get('/:articleName',function(req,res){
-    //articleName -- article-one
-    //articles[articleName] == {} content object for article one
-    var articleName = req.params.articleName;
-  res.send(createTemplate(articles[articleOne])); 
+app.get('/article-one',function(req,res){
+  res.send(createTemplate(articleOne)); 
 });
 
 app.get('/ui/style.css', function (req, res) {
