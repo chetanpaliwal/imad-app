@@ -26,9 +26,9 @@ function createTemplate(data){
     var heading = data.heading;
     var date = data.date;
     var content = data.content;
-    var htmltemplate = `
     
-    <!DOCTYPE html>
+    var htmltemplate = `
+    <html>
     <head>
         <title>
             ${title}
@@ -78,7 +78,7 @@ app.get('/submit-name',function(req,res){   //URL: /submit-name?=name = xxxxx
   res.send(JSON.stringify(names));
 });
 
-app.get('/article-one',function(req,res){
+app.get('/article-one',function(req, res) {
   res.send(createTemplate(articleOne)); 
 });
 
