@@ -29,7 +29,9 @@ var articles = {
   content: `
             <p>
                  This is the first content of my second article.This is the first content of my second article.
-            </p>`},
+            </p>`
+        
+    },
     'article-three' : {  title:'Article Three | Chetan Paliwal',
   heading:'Article Three',
   date:'August 08, 2017',
