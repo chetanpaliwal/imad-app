@@ -116,7 +116,7 @@ app.get('/submit-name',function(req,res){   //URL: /submit-name?=name = xxxxx
 app.get('/articles/:articleName',function(req, res) {
     //articleName == article-one
     //articles[articleName] == {}content object of article one
-  
+  //SELECT * FROM article where title = '';DELETE WHERE a = 'asdf'
   //SELECT * FROM article where title = '\';DELETE WHERE a = \'asdf'
   pool.query("SELECT * FROM article WHERE title = $1", [req.params.articleName], function(err , reult){
      if(err){
